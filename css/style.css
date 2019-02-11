@@ -37,6 +37,10 @@ h2{
   margin: 0;
 }
 
+p.footer{
+    display: block;
+
+}
 
 .row-spacer{
   padding-bottom: 1em;
@@ -103,7 +107,8 @@ h2{
 .footer{
   color: #FFBF00;
   font-size: 14px;
-  display: block;
+  display: inline;
+  margin: 0;
 }
 
 .btn-primary{
@@ -300,9 +305,66 @@ h2{
   background-size: 100% 2px, 3px 100%;
   pointer-events: none;
 }
-.crt {
+/* .crt {
   animation: textShadow 1.6s infinite;
+} */
+
+.blinking-cursor {
+  font-size: 14px;
+  margin-left: -.5em;
+  display: inline;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
 }
+
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #FFBF00;;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #FFBF00;;
+  }
+}
+
+@-webkit-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #FFBF00;;
+  }
+}
+
+@-ms-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #FFBF00;;
+  }
+}
+
+@-o-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #FFBF00;;
+  }
+}
+
 
 @media (max-width: 767px) {
 
