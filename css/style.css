@@ -72,7 +72,9 @@ h2{
   margin-left: auto;
   margin-right: auto;
   width: 35%;
+  height: 35%;
   width: 35vh;
+  height: 35vh;
 }
 
 .container{
@@ -283,7 +285,8 @@ h2{
 
 @media (max-width: 767px) {
   .profile{
-    width:80%;
+    width: 80%;
+    height: 80%;
   }
   .container{
     max-width: 90%;

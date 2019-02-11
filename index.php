@@ -1,1 +1,1 @@
-<?php include 'index.html';?>
+<?php header("Content-Encoding:gzip"); include 'index.html';?>
