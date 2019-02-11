@@ -1,5 +1,5 @@
 
-_386 = {onePass:true, speedFactor:5.0};
+_386 = {onePass:false, speedFactor:3.8};
 
 var lFollowX = 0,
     lFollowY = 0,

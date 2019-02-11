@@ -35,6 +35,14 @@ h1 {
           transform: translate3d(-50%, -50%, 0);
 }
 
+h2{
+  font-size: 24px;
+}
+
+.row-spacer{
+  padding-bottom: 1em;
+}
+
 .btn{
   font-weight: 600;
 }
@@ -46,6 +54,7 @@ h1 {
 .ch1{
   text-align: center;
   color: #FFBF00;
+  margin-top: 1em;
 }
 
 .btn-block{
@@ -61,17 +70,17 @@ h1 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 50%;
-  width: 50%;
+  width: 35%;
+  width: 35vh;
 }
 
 .container{
-  max-width: 600px;
+  max-width: 80%;
 }
 
-.row{
+/* .row{
   padding-bottom: 1em;
-}
+} */
 
 .btn-primary{
   background-color:#FFBF00;
@@ -83,7 +92,7 @@ h1 {
 
 .container.main {
   position: relative;
-  top: 2em;
+  top: 1em;
 }
 
 .crt-bg{
@@ -94,7 +103,7 @@ h1 {
   height: 100%;
   width: inherit;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .wrap .bg {
   width: 100%;
@@ -269,4 +278,21 @@ h1 {
 }
 .crt {
   animation: textShadow 1.6s infinite;
+}
+
+@media only screen and (max-width: 600px) {
+  .profile{
+    width:80%;
+  }
+  .container{
+    max-width: 90%;
+  }
+  .btn-primary{
+    width: 90%;
+    margin-bottom: 1.5em;
+  }
+  .wrap{
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
 }
