@@ -9,9 +9,9 @@
   --abberationT: rgba(77, 71, 0, 0.3);
 }
 
-html, body {
+/* html, body {
   height: 100%;
-}
+} */
 
 body {
   position: relative;
@@ -38,6 +38,7 @@ h1 {
 h2{
   font-size: 24px;
 }
+
 
 .row-spacer{
   padding-bottom: 1em;
@@ -280,7 +281,7 @@ h2{
   animation: textShadow 1.6s infinite;
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 767px) {
   .profile{
     width:80%;
   }
@@ -290,9 +291,19 @@ h2{
   .btn-primary{
     width: 90%;
     margin-bottom: 1.5em;
+    height: 4em;
+    font-size: 6vw;
   }
-  .wrap{
+
+  /* .wrap{
     overflow-y: scroll;
     overflow-x: hidden;
+  } */
+}
+
+
+@media (min-width: 768px) {
+  html,body{
+    height:100%;
   }
 }
