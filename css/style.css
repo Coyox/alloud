@@ -1,0 +1,272 @@
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700);
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:root{
+  --abberationL: rgba(255, 187, 0, 0.3);
+  --abberationR: rgba(255, 187, 0, 0.3);
+  --abberationT: rgba(77, 71, 0, 0.3);
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  padding: 1em;
+  font-family: 'Libre Baskerville', serif;
+  background: #FFBF00;
+  background-color: #FFBF00;
+  visibility: hidden;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 0%;
+  left: 50%;
+  color: #FFBF00;
+  font-size: 5vmin;
+  text-align: center;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+}
+
+.btn{
+  font-weight: 600;
+}
+
+.btn::first-letter{
+  color: white;
+}
+
+.ch1{
+  text-align: center;
+  color: #FFBF00;
+}
+
+.btn-block{
+  margin: auto;
+  width: 90%;
+}
+
+#wrap386{
+  background:  #FFBF00;
+}
+
+.profile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50%;
+  width: 50%;
+}
+
+.container{
+  max-width: 600px;
+}
+
+.row{
+  padding-bottom: 1em;
+}
+
+.btn-primary{
+  background-color:#FFBF00;
+}
+
+.btn-primary:hover, .btn-secondary:hover{
+  background-color: rgb(201, 50, 125);
+}
+
+.container.main {
+  position: relative;
+  top: 2em;
+}
+
+.crt-bg{
+  background-color: rgba(64, 64, 64, 0.8);
+}
+
+.wrap {
+  height: 100%;
+  width: inherit;
+  position: relative;
+  overflow-x: hidden;
+}
+.wrap .bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: url("https://i.imgur.com/FXHh8q9.jpg") no-repeat center center;
+  background-size: cover;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.27861;
+  }
+  5% {
+    opacity: 0.34769;
+  }
+  10% {
+    opacity: 0.23604;
+  }
+  15% {
+    opacity: 0.90626;
+  }
+  20% {
+    opacity: 0.18128;
+  }
+  25% {
+    opacity: 0.83891;
+  }
+  30% {
+    opacity: 0.65583;
+  }
+  35% {
+    opacity: 0.67807;
+  }
+  40% {
+    opacity: 0.26559;
+  }
+  45% {
+    opacity: 0.84693;
+  }
+  50% {
+    opacity: 0.96019;
+  }
+  55% {
+    opacity: 0.08594;
+  }
+  60% {
+    opacity: 0.20313;
+  }
+  65% {
+    opacity: 0.71988;
+  }
+  70% {
+    opacity: 0.53455;
+  }
+  75% {
+    opacity: 0.37288;
+  }
+  80% {
+    opacity: 0.71428;
+  }
+  85% {
+    opacity: 0.70419;
+  }
+  90% {
+    opacity: 0.7003;
+  }
+  95% {
+    opacity: 0.36108;
+  }
+  100% {
+    opacity: 0.24387;
+  }
+}
+
+@keyframes textShadow {
+  0% {
+    text-shadow: 0.4389924193300864px 0 1px var(--abberationR), -0.4389924193300864px 0 1px var(--abberationL), 0 0 3px;
+  }
+  5% {
+    text-shadow: 2.7928974010788217px 0 1px var(--abberationR), -2.7928974010788217px 0 1px var(--abberationL), 0 0 3px;
+  }
+  10% {
+    text-shadow: 0.02956275843481219px 0 1px var(--abberationR), -0.02956275843481219px 0 1px var(--abberationL), 0 0 3px;
+  }
+  15% {
+    text-shadow: 0.40218538552878136px 0 1px var(--abberationR), -0.40218538552878136px 0 1px var(--abberationL), 0 0 3px;
+  }
+  20% {
+    text-shadow: 3.4794037899852017px 0 1px var(--abberationR), -3.4794037899852017px 0 1px var(--abberationL), 0 0 3px;
+  }
+  25% {
+    text-shadow: 1.6125630401149584px 0 1px var(--abberationR), -1.6125630401149584px 0 1px var(--abberationL), 0 0 3px;
+  }
+  30% {
+    text-shadow: 0.7015590085143956px 0 1px var(--abberationR), -0.7015590085143956px 0 1px var(--abberationL), 0 0 3px;
+  }
+  35% {
+    text-shadow: 3.896914047650351px 0 1px var(--abberationR), -3.896914047650351px 0 1px var(--abberationL), 0 0 3px;
+  }
+  40% {
+    text-shadow: 3.870905614848819px 0 1px var(--abberationR), -3.870905614848819px 0 1px var(--abberationL), 0 0 3px;
+  }
+  45% {
+    text-shadow: 2.231056963361899px 0 1px var(--abberationR), -2.231056963361899px 0 1px var(--abberationL), 0 0 3px;
+  }
+  50% {
+    text-shadow: 0.08084290417898504px 0 1px var(--abberationR), -0.08084290417898504px 0 1px var(--abberationL), 0 0 3px;
+  }
+  55% {
+    text-shadow: 2.3758461067427543px 0 1px var(--abberationR), -2.3758461067427543px 0 1px var(--abberationL), 0 0 3px;
+  }
+  60% {
+    text-shadow: 2.202193051050636px 0 1px var(--abberationR), -2.202193051050636px 0 1px var(--abberationL), 0 0 3px;
+  }
+  65% {
+    text-shadow: 2.8638780614874975px 0 1px var(--abberationR), -2.8638780614874975px 0 1px var(--abberationL), 0 0 3px;
+  }
+  70% {
+    text-shadow: 0.48874025155497314px 0 1px var(--abberationR), -0.48874025155497314px 0 1px var(--abberationL), 0 0 3px;
+  }
+  75% {
+    text-shadow: 1.8948491305757957px 0 1px var(--abberationR), -1.8948491305757957px 0 1px var(--abberationL), 0 0 3px;
+  }
+  80% {
+    text-shadow: 0.0833037308038857px 0 1px var(--abberationR), -0.0833037308038857px 0 1px var(--abberationL), 0 0 3px;
+  }
+  85% {
+    text-shadow: 0.09769827255241735px 0 1px var(--abberationR), -0.09769827255241735px 0 1px var(--abberationL), 0 0 3px;
+  }
+  90% {
+    text-shadow: 3.443339761481782px 0 1px var(--abberationR), -3.443339761481782px 0 1px var(--abberationL), 0 0 3px;
+  }
+  95% {
+    text-shadow: 2.1841838852799786px 0 1px var(--abberationR), -2.1841838852799786px 0 1px var(--abberationL), 0 0 3px;
+  }
+  100% {
+    text-shadow: 2.6208764473832513px 0 1px var(--abberationR), -2.6208764473832513px 0 1px var(--abberationL), 0 0 3px;
+  }
+}
+.crt::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  animation: flicker 0.16s infinite;
+}
+.crt::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+.crt {
+  animation: textShadow 1.6s infinite;
+}
