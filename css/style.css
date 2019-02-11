@@ -10,10 +10,6 @@
   --abberationT: rgba(77, 71, 0, 0.3);
 }
 
-/* html, body {
-  height: 100%;
-} */
-
 body {
   position: relative;
   padding: 1em;
@@ -38,7 +34,7 @@ h1 {
 
 h2{
   font-size: 4vmin;
-  
+  margin: 0;
 }
 
 
@@ -81,8 +77,14 @@ h2{
 }
 
 #wrap386{
-  background:  #FFBF00;
+  background: rgb(22, 22, 22);
 }
+
+#bar386{
+  color: white;
+  background: rgb(22, 22, 22);
+}
+
 
 .profile {
   display: block;
@@ -103,10 +105,6 @@ h2{
   font-size: 14px;
   display: block;
 }
-
-/* .row{
-  padding-bottom: 1em;
-} */
 
 .btn-primary{
   background-color:#FFBF00;
@@ -315,6 +313,10 @@ h2{
     font-size: 6vmin;
   }
 
+  .ch1{
+    margin-bottom: 1em;
+  }
+
   .profile{
     width: 80%;
     height: 80%;
@@ -339,5 +341,8 @@ h2{
 @media (min-width: 768px) {
   html,body{
     height:100%;
+  }
+  .btn{
+    margin-top: 1em;
   }
 }
