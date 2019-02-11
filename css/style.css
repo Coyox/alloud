@@ -379,7 +379,7 @@ p.footer{
   display: block;
   position: absolute;
   cursor: pointer;
-  color: #f3df0a;
+  color: #FFBF00;
   right: 1em;
   top: 0;
   z-index: 100;
@@ -390,12 +390,11 @@ p.footer{
 .switch-label::before {
   content: " ";
   display: inline-block;
-  border-radius: 100%;
-  width: 10px;
-  height: 10px;
-  background: #003321;
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 217, 0, 0.30);
   margin-right: 10px;
-  border: 1px solid #111;
+
 }
 .switch-label:active {
   box-shadow: none;
