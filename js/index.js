@@ -32,3 +32,5 @@ $(window).on('mousemove click', function(e) {
 });
 
 moveBackground();
+
+var furry_egg = new Konami(function() {$(".trash").css("display","inline");});
