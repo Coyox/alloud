@@ -1,20 +1,26 @@
-
-
 *, *:before, *:after {
   box-sizing: border-box;
 }
 
 :root{
-  --abberationL: rgba(255, 187, 0, 0.3);
-  --abberationR: rgba(255, 187, 0, 0.3);
+  --abberationL: rgba(166, 69, 0, 0.3);
+  --abberationR: rgba(239, 121, 0, 0.3);
   --abberationT: rgba(77, 71, 0, 0.3);
+
+  --amber: #ffcb28;
+  --amberC:#ef7900;
+  --amberA:#a64500;
+  --amber8: #2c0800;
+  --amber6: #ff9a04;
+  --amberD: #fb8600;
+  --amberF: #ffe334;
 }
 
 body {
   position: relative;
   padding: 1em;
-  background: #FFBF00;
-  background-color: #FFBF00;
+  background: var(--amber);
+  background-color: var(--amber);
   visibility: hidden;
 }
 
@@ -24,7 +30,7 @@ h1 {
   position: relative;
   top: 0%;
   left: 50%;
-  color: #FFBF00;
+  color: var(--amber);
  
   font-size: 6vmin;
   text-align: center;
@@ -52,22 +58,20 @@ p.footer{
 
  .btn{
   min-width: 10em;
+  box-shadow: 9.5px 9.5px 0 var(--amber8);
 } 
 
-.btn::first-letter{
-  color:  black;
-}
 
 .ch1{
   text-align: center;
-  color: #FFBF00;
+  color: var(--amber);
   margin-top: 1em;
 }
 
 
 .ch2{
   text-align: center;
-  color: #FFBF00;
+  color: var(--amber);
   display: inline;
 }
 
@@ -105,18 +109,41 @@ p.footer{
 }
 
 .footer{
-  color: #FFBF00;
+  color: var(--amber);
   font-size: 14px;
   display: inline;
   margin: 0;
 }
 
 .btn-primary{
-  background-color:#FFBF00;
+  background-color:var(--amber);
+  color: var(--amber8);
+}
+.btn-primary::first-letter{
+  color: var(--amber8);
 }
 
 .btn-primary:hover, .btn-secondary:hover{
-  background-color: rgb(201, 50, 125);
+  background-color: var(--amberF);
+  color: var(--amber8);
+}
+.btn-primary:hover::first-letter{
+  color: var(--amber8);
+}
+  
+
+.btn:focus{
+  background-color: var(--amberF) !important;
+  color: var(--amber8) !important;
+  box-shadow: 4.5px 4.5px 0 var(--amber8);
+}
+.btn:focus::first-letter{
+  color: var(--amber8) !important;
+}
+
+a:hover, a:focus{
+  background-color: var(--amber8);
+  color: var(--amber);
 }
 
 .container.main {
@@ -214,7 +241,7 @@ p.footer{
     opacity: 0.24387;
   }
 }
-
+*/
 @keyframes textShadow {
   0% {
     text-shadow: 0.4389924193300864px 0 1px var(--abberationR), -0.4389924193300864px 0 1px var(--abberationL), 0 0 3px;
@@ -280,6 +307,7 @@ p.footer{
     text-shadow: 2.6208764473832513px 0 1px var(--abberationR), -2.6208764473832513px 0 1px var(--abberationL), 0 0 3px;
   }
 }
+/*
 .crt::after {
   content: " ";
   display: block;
@@ -307,9 +335,9 @@ p.footer{
   background-size: 100% 2px, 3px 100%;
   pointer-events: none;
 } */
-/* .crt {
+ .crt {
   animation: textShadow 1.6s infinite;
-} */
+} 
 /** CRT SCREEN **/
 
 /** CURSOR **/
@@ -329,7 +357,7 @@ p.footer{
     color: transparent;
   }
   50% {
-    color: #FFBF00;;
+    color: var(--amber);;
   }
 }
 
@@ -338,7 +366,7 @@ p.footer{
     color: transparent;
   }
   50% {
-    color: #FFBF00;;
+    color: var(--amber);;
   }
 }
 
@@ -347,7 +375,7 @@ p.footer{
     color: transparent;
   }
   50% {
-    color: #FFBF00;;
+    color: var(--amber);;
   }
 }
 
@@ -356,7 +384,7 @@ p.footer{
     color: transparent;
   }
   50% {
-    color: #FFBF00;;
+    color: var(--amber);;
   }
 }
 
@@ -365,7 +393,7 @@ p.footer{
     color: transparent;
   }
   50% {
-    color: #FFBF00;
+    color: var(--amber);
   }
 }
 /** CURSOR **/
@@ -379,7 +407,7 @@ p.footer{
   display: block;
   position: absolute;
   cursor: pointer;
-  color: #FFBF00;
+  color: var(--amber);
   right: 1em;
   top: 0;
   z-index: 100;
@@ -392,7 +420,7 @@ p.footer{
   display: inline-block;
   width: 8px;
   height: 8px;
-  background: rgba(255, 217, 0, 0.30);
+  background: var(--amberA);
   margin-right: 10px;
 
 }
@@ -402,7 +430,7 @@ p.footer{
 }
 
 #switch:checked + .switch-label::before {
-  background: #FFBF00;
+  background: var(--amber);
 }
 #switch:checked + .switch-label::after {
   content: "off";
@@ -504,10 +532,11 @@ p.footer{
   background-size: 100% 2px, 3px 100%;
   pointer-events: none;
 }
-/* 
+/*
 #switch:checked ~ .container::after {
   animation: flicker 0.16s infinite;
-} */
+} 
+*/
 
 @keyframes turn-on {
   0% {
@@ -593,7 +622,7 @@ p.footer{
 }
 
 .overlay {
-  color: #FFBF00;
+  color: var(--amber);
   position: absolute;
   top: 20px;
   left: 20px;
