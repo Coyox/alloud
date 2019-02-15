@@ -464,10 +464,11 @@ a:hover, a:focus{
   pointer-events: none;
 }
 /*
-#switch:checked ~ .screen::after {
+#switch:checked ~ .container > .screen::after {
   animation: flicker 0.16s infinite;
 } 
 */
+
 
 @keyframes turn-on {
   0% {
