@@ -28,10 +28,10 @@ body {
 }
 
 #screen{
-    -webkit-animation: pulse 10s ease infinite;
+    /* -webkit-animation: pulse 10s ease infinite;
     -z-animation: pulse 10s ease infinite;
     -o-animation: pulse 10s ease infinite;
-    animation: pulse 10s ease infinite;
+    animation: pulse 10s ease infinite; */
 
 }
 
@@ -53,10 +53,29 @@ body {
     animation: rainbow 18s ease infinite;
 }
 
-#arufront{
-   top: 160px;
-   width: 275px;
-    left: 100px;
+#imgref{
+    position: absolute;
+    top:32px;
+}
+
+#ref-front{
+    top:487px;
+    left: 750px;
+}
+
+#ref-back{
+    top:540px;
+    left: 755px;
+}
+
+#ref-head{
+    top:545px;
+    left: 807px;
+}
+
+#ref-side{
+    top:537px;
+    left: 703px;
 }
 
 /* CLASSES */
@@ -68,6 +87,13 @@ body {
     background-color: #53514c;
 }
 
+.refbutton{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+
+}
 
 .amdek {
     width: 876px;
@@ -78,7 +104,25 @@ body {
 
 .aru {
     position: absolute;
-    transform: rotate3d(-0.3,1,0,-30deg);
+    top: 160px;
+    width: 285px;
+    left: 100px;
+    -webkit-transition: all .5s; /* Safari */
+    transition: all .5s;
+    transition-timing-function: ease;
+    transform: rotate3d(1,-1,-0.1,30deg);
+}
+
+.aru:hover{
+    transform: rotate3d(0,0,-0,0);
+    width: 500px;
+}
+
+.keeb{
+    position: absolute;
+    left: -150px;
+    transform: rotate(5deg);
+    top: 150px;
 }
 
 /* ANIMATIONS */
