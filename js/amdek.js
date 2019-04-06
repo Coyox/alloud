@@ -23,3 +23,14 @@ $('#ref-side').on({
         $('#aru').attr('src','img/aru-l.png');
     }
 });
+
+
+function typeWriter() {
+    if (i < txt.length) {
+      $("#myname").html($("#myname").html() + txt.charAt(i));
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+}
+  
+  typeWriter();

@@ -1,3 +1,13 @@
+:root{
+    --amber: #ffcb28;
+    --amberC:#ef7900;
+    --amberA:#a64500;
+    --amber8: #2c0800;
+    --amber6: #ff9a04;
+    --amberD: #fb8600;
+    --amberF: #ffe334;
+  }
+
 /* ELEMENTS */
 body {
     color: #dcdbd8;
@@ -78,6 +88,83 @@ body {
     left: 703px;
 }
 
+#gamecube{
+    position: absolute;
+    width: 900px;
+    top: 1160px;
+    left: 200px;
+    -webkit-animation: rot 7s ease infinite;
+    -z-animation: rot 7s ease infinite;
+    -o-animation: rot 7s ease infinite;
+    animation: rot 7s ease infinite;
+}
+
+#gameyote{
+    position: absolute;
+    width: 500px;
+    top: 700px;
+    left: 440px;
+    -webkit-animation: jiggle 5s ease infinite;
+    -z-animation: jiggle 5s ease infinite;
+    -o-animation: jiggle 5s ease infinite;
+    animation: jiggle 5s ease infinite;
+}
+
+#meleegif{
+    position: absolute;
+    top: 720px;
+    transform: rotate(-10deg);
+}
+
+#myname {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    color: var(--amber);
+   
+    font-size: 6vmin;
+    text-align: center;
+}
+
+#fdbg{
+    position: absolute;
+    top: 1220px;
+    left: 40px;
+    width: 500px;
+    transform: rotate(2deg);
+}
+
+#fd{
+    position: absolute;
+    top: 1300px;
+    -webkit-animation: jiggle 10s ease infinite;
+    -z-animation: jiggle 10s ease infinite;
+    -o-animation: jiggle 10s ease infinite;
+    animation: jiggle 14s ease infinite;
+}
+
+#falscroll{
+    background-image: url(../img/falco.png);
+    top: 730px;
+    animation: slide 20s linear infinite;
+    
+}
+#foxscroll{
+    background-image: url(../img/fox.png);
+    background-position: 30px;
+    top: 930px;
+    animation: slide 18s linear infinite;
+}
+#marscroll{
+    background-image: url(../img/marth.png);
+    background-position: 50px;
+    top: 1130px;
+    animation: slide 16s linear infinite;
+}
+
+
 /* CLASSES */
 
 .hell{
@@ -111,6 +198,21 @@ body {
     transition: all .5s;
     transition-timing-function: ease;
     transform: rotate3d(1,-1,-0.1,30deg);
+    z-index: 1000;
+}
+
+.scroll{
+    width: 1632px;
+    height: 200px;
+    background-repeat: repeat-x;
+}
+
+.meleebg{
+    overflow: hidden;
+    position: absolute;
+    top: 731px;
+    height: 600px;
+    width: 1000px;
 }
 
 .aru:hover{
@@ -149,8 +251,12 @@ body {
 
 @keyframes rot {
     0%{transform: rotate(-4deg);}
-    50%{transform: rotate(4deg);}
+    50%{transform: rotate(6deg);}
     100%{transform: rotate(-4deg);}
+}
+
+@keyframes rotgc{
+
 }
 
 @keyframes jiggle {
@@ -164,3 +270,12 @@ body {
     50%{transform: scale3d(1.03,1.03,1.03);}
     100%{transform: scale3d(1,1,1);}
 }
+
+@keyframes slide {
+    0%{
+      transform: translate3d(0, 0, 0);
+    }
+    100%{
+      transform: translate3d(-544px, 0, 0); /* The image width */
+    }
+  }
