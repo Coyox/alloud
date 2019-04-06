@@ -164,6 +164,13 @@ body {
     animation: slide 16s linear infinite;
 }
 
+#title{
+    position: absolute;
+    width: 250px;
+    left: 680px;
+    top: 50px;
+}
+
 
 /* CLASSES */
 
