@@ -34,3 +34,18 @@ $(window).on('mousemove click', function(e) {
 moveBackground();
 
 var furry_egg = new Konami(function() {$(".trash").css("display","inline-block");});
+
+var i = 0;
+var txt = '【alloud】'; /* The text */
+var txtj = 'TEMP';
+var speed = 500; /* The speed/duration of the effect in milliseconds */
+
+function typeWriter() {
+  if (i < txt.length) {
+    $("#myname").html($("#myname").html() + txt.charAt(i));
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+typeWriter();

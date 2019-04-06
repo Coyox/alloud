@@ -1,0 +1,122 @@
+/* ELEMENTS */
+body {
+    color: #dcdbd8;
+    font-family: 'VT323', monospace;
+}
+
+#main {
+    width: 1000px;
+    min-height: 2000px;
+    left: 50%;
+    margin-left: -500px;
+    position: absolute;
+    background-color: #212121;
+    /*background: linear-gradient(0deg, #f24b9b, #f24b9b, #f24b9b, #f24b9b, #ede697, #ede697, #ede697, #ede697, #ede697);
+    background-size: 400% 400%;
+    -webkit-animation: rainbow 24s ease infinite;
+    -z-animation: rainbow 24s ease infinite;
+    -o-animation: rainbow 24s ease infinite;
+    animation: rainbow 24s ease infinite;
+    */
+}
+
+#scanlines {
+    background-image: url(../img/scanlines.png);
+    background-repeat: repeat;
+    background-size: 960px 720px;
+    height: 100%;
+}
+
+#screen{
+    -webkit-animation: pulse 10s ease infinite;
+    -z-animation: pulse 10s ease infinite;
+    -o-animation: pulse 10s ease infinite;
+    animation: pulse 10s ease infinite;
+
+}
+
+
+#bg { 
+    height: 100%;
+    width: 100%;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    background-attachment: fixed;
+    background: linear-gradient(124deg, #ffe334, #ffe334, #ffe334, #ffe334, #ffae18, #ffcb28, #ffcb28, #ffcb28, #ffcb28);
+    background-size: 2000% 2000%;
+    -webkit-animation: rainbow 18s ease infinite;
+    -z-animation: rainbow 18s ease infinite;
+    -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;
+}
+
+#arufront{
+   top: 160px;
+   width: 275px;
+    left: 100px;
+}
+
+/* CLASSES */
+
+.hell{
+    text-align: center;
+    width: 976px;
+    margin: auto;
+    background-color: #53514c;
+}
+
+
+.amdek {
+    width: 876px;
+    position: absolute;
+    top: 30px;
+    left: -200px;
+}
+
+.aru {
+    position: absolute;
+    transform: rotate3d(-0.3,1,0,-30deg);
+}
+
+/* ANIMATIONS */
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+@keyframes rot {
+    0%{transform: rotate(-4deg);}
+    50%{transform: rotate(4deg);}
+    100%{transform: rotate(-4deg);}
+}
+
+@keyframes jiggle {
+    0%{transform: translateY(-12px);}
+    50%{transform: translateY(12px);}
+    100%{transform: translateY(-12px);}
+}
+
+@keyframes pulse {
+    0%{transform: scale3d(1,1,1);}
+    50%{transform: scale3d(1.03,1.03,1.03);}
+    100%{transform: scale3d(1,1,1);}
+}
