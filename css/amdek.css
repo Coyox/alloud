@@ -56,12 +56,12 @@ body {
     bottom: 0;
     position: fixed;
     background-attachment: fixed;
-    background: linear-gradient(124deg, #ffe334, #ffe334, #ffe334, #ffe334, #ffae18, #ffcb28, #ffcb28, #ffcb28, #ffcb28);
+    background: linear-gradient(124deg, #ffcb28, #ffe334, #ffe334, #ffe334, #ffae18, #ffcb28, #ffcb28, #ffcb28, #ffe334);
     background-size: 2000% 2000%;
-    -webkit-animation: rainbow 18s ease infinite;
-    -z-animation: rainbow 18s ease infinite;
-    -o-animation: rainbow 18s ease infinite;
-    animation: rainbow 18s ease infinite;
+    -webkit-animation: rainbow 12s ease infinite;
+    -z-animation: rainbow 12s ease infinite;
+    -o-animation: rainbow 12s ease infinite;
+    animation: rainbow 12s ease infinite;
 }
 
 #imgref{
@@ -216,6 +216,8 @@ audio{
     transform: rotate3d(1,-1,-0.1,30deg);
     z-index: 1000;
 }
+
+
 
 .scroll{
     width: 1632px;
