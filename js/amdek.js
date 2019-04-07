@@ -1,3 +1,6 @@
+var audio = document.getElementById("audio");
+audio.volume = 0.5;
+
 $('#ref-front').on({
     'click': function(){
         $('#aru').attr('src','img/aru-f.png');
