@@ -1,5 +1,5 @@
 var audio = document.getElementById("audio");
-audio.volume = 0.5;
+audio.volume = 0.3;
 
 $('#ref-front').on({
     'click': function(){

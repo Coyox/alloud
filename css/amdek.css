@@ -215,6 +215,11 @@ audio{
     transition-timing-function: ease;
     transform: rotate3d(1,-1,-0.1,30deg);
     z-index: 1000;
+    filter: brightness(0.75) contrast(1) sepia(0.75) hue-rotate(-2deg) saturate(3.5);
+    /* background: repeating-linear-gradient(transparent, transparent 2px, black 3px, black 3px);
+    background-size: auto 100%;
+    background-position: center center;
+    opacity: 1; */
 }
 
 
@@ -236,6 +241,7 @@ audio{
 .aru:hover{
     transform: rotate3d(0,0,-0,0);
     width: 500px;
+    filter: unset;
 }
 
 .keeb{
