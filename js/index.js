@@ -33,11 +33,18 @@ $(window).on('mousemove click', function(e) {
 
 moveBackground();
 
-var furry_egg = new Konami(function() {$(".trash").css("display","inline-block");});
+var ps1 = new Audio("muse/ps1.ogg");
+ps1.volume = .3;
+ps1.play();
+
+var hamburger = new Audio("muse/hamburger.ogg")
+var furry_egg = new Konami(function(){
+  hamburger.play();
+});
 
 var i = 0;
 var txt = '【aruyote】'; /* The text */
-var txtj = 'TEMP';
+//var txtj = 'TEMP';
 var speed = 500; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter() {

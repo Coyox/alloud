@@ -337,7 +337,7 @@ a:hover, a:focus{
   display: block;
   position: absolute;
   cursor: pointer;
-  color: var(--amber);
+  color: white;
   right: 1em;
   top: 0;
   z-index: 100;
@@ -350,7 +350,7 @@ a:hover, a:focus{
   display: inline-block;
   width: 8px;
   height: 8px;
-  background: var(--amberA);
+  background: white;
   margin-right: 10px;
 
 }
@@ -360,7 +360,7 @@ a:hover, a:focus{
 }
 
 #switch:checked + .switch-label::before {
-  background: var(--amber);
+  background: white;
 }
 #switch:checked + .switch-label::after {
   content: "off";
