@@ -7,13 +7,13 @@
   --abberationR: rgba(239, 121, 0, 0.3);
   --abberationT: rgba(77, 71, 0, 0.3);
 
-  --amber: #ffcb28;
+  --amber: #eeb04f;
   --amberC:#ef7900;
   --amberA:#a64500;
   --amber8: #2c0800;
   --amber6: #ff9a04;
   --amberD: #fb8600;
-  --amberF: #ffe334;
+  --amberF: #f1ca8b;
 }
 
 body {
@@ -192,7 +192,7 @@ a:hover, a:focus{
   top: 0;
   left: 0;
   z-index: -1;
-  background: url("https://i.imgur.com/FXHh8q9.jpg") no-repeat center center;
+  background: url("../img/bg.png") no-repeat center center;
   background-size: cover;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);

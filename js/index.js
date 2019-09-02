@@ -36,7 +36,7 @@ moveBackground();
 var furry_egg = new Konami(function() {$(".trash").css("display","inline-block");});
 
 var i = 0;
-var txt = '【alloud】'; /* The text */
+var txt = '【aruyote】'; /* The text */
 var txtj = 'TEMP';
 var speed = 500; /* The speed/duration of the effect in milliseconds */
 
