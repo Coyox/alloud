@@ -33,19 +33,44 @@ $(window).on('mousemove click', function(e) {
 
 moveBackground();
 
-var ps1 = new Audio("muse/ps1.ogg");
-ps1.volume = .3;
-ps1.play();
+// var ps1 = new Audio("muse/ps1.ogg");
+// ps1.volume = .3;
+// ps1.play();
 
 var hamburger = new Audio("muse/hamburger.ogg")
+hamburger.volume = .5;
 var furry_egg = new Konami(function(){
+  hamburger.currentTime = 0;
   hamburger.play();
 });
 
+var hover = new Audio("muse/hover.ogg");
+hover.volume = .25;
+$(".btn").mouseover(function(){
+  hover.currentTime = 0;
+  hover.play();
+});
+
+var crtOn = new Audio("muse/crton.ogg");
+$("#switch").click(function(){
+  if($("#switch").is(":checked")){
+    crtOn.currentTime = 0;
+    crtOn.play();
+  } else {
+    crtOn.pause();
+    crtOn.currentTime = 0;
+  }
+});
+
+var alert = new Audio("muse/CHIMES.ogg");
+alert.volume = .25;
+$("#refbutton").click(function(){
+  alert.play();
+})
+
 var i = 0;
-var txt = '【aruyote】'; /* The text */
-//var txtj = 'TEMP';
-var speed = 500; /* The speed/duration of the effect in milliseconds */
+var txt = '【aruyote】'; 
+var speed = 500;
 
 function typeWriter() {
   if (i < txt.length) {
