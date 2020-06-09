@@ -12,11 +12,11 @@ a{
     color: yellow;
 }
 
-fieldset{
+fieldset {
     margin: 1em;
 }
 
-.window-hide{
+.window-hide {
     visibility: hidden;
 }
 
