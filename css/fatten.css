@@ -22,7 +22,6 @@ fieldset{
 
 .desktop-icons {
     display: block;
-    width: 128px;
     position: absolute;
     left: 0;
     margin-left: 8px;
@@ -31,49 +30,45 @@ fieldset{
 .show-window {
     display: block;
     position: relative;
-    margin-left: auto;
+    margin-left: 80px;
     margin-top: auto;
     margin-bottom: auto;
     max-width: 1024px;
     margin-right: auto;
-    padding-left: 80px;
+    /* padding-left: 6em; */
 }
 
-.window{
+.window {
     margin: auto;
+    margin-right: 1em; 
+    margin-left: 1em;
     display: block;
-    width: 90%;
+   
 }
 
-.appicon{
+.appicon {
     width:  80px;
     height: 80px;
     text-align: center;
     margin-bottom: 24px;
 }
 
-.appimg{
+
+.appimg {
     height: 64px;
     width: 64px;
 }
 
-.fat-body{
+.fat-body {
     width: 100%;
     height: 100%;
 }
 
-.footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 48px;
-}
-
-.navbar{
+.navbar {
     width: 100%
 }
 
-.flex{
+.flex {
     display: inline-flex;
 }
 
@@ -84,12 +79,12 @@ fieldset{
     /* margin: 1em; */
 }
 
-.image-box{
+.image-box {
     display: block;
     /* margin: 1em; */
 }
 
-.fatass{
+.fatass {
     width: 100%;
     height: 100%;
     max-width: 512px;
@@ -101,18 +96,18 @@ fieldset{
     /* max-width: 300px;  */
 }
 
-.fatten-img{
+.fatten-img {
     text-align: center;
 }
 
-.start-button{
+.start-button {
     background-image: url(../img/start-button.png);
     background-repeat: no-repeat;
     width: 45px;
     height: 14px;
 }
 
-.start-button-padding{
+.start-button-padding {
     float: left;
     margin-left: 2px;
     margin-bottom: 2px;
@@ -130,7 +125,7 @@ fieldset{
     color: #000;
 }
 
-.start-bar{
+.start-bar {
     padding: 2px;
     box-shadow: inset 1px 0 #fff;
     display: block;
@@ -147,11 +142,11 @@ fieldset{
     -ms-user-select: none;
     user-select: none;
 }
-.swatch-box{
+.swatch-box {
     display: inline-block;
 }
 
-.swatch{
+.swatch {
     height: 48px;
     width: 48px;
     color: #f3f3f3;
@@ -160,28 +155,74 @@ fieldset{
     display: inline-block;
 }
 
-.colour1{
+.colour1 {
     background-color: #53514b;
 }
-.colour2{
+.colour2 {
     background-color: #787878;
 }
-.colour3{
+.colour3 {
     background-color: #413c38;
 }
-.colour4{
+.colour4 {
     background-color: #dcdbd8;
     color: #413c38;
 }
-.colour5{
+.colour5 {
     background-color: #f3f3f3;
     color: #413c38;
 }
-.colour6{
+.colour6 {
     background-color: #efe119;
     color: #413c38;
 }
-.colour7{
+.colour7 {
     background-color: #3a3a3a;
     color: #efe119;
+}
+
+.title-bar {
+    background: linear-gradient(270deg, #ef42c5, #42cbef);
+    background-size: 200% 100%;
+
+    -webkit-animation: titlebar-animation 10s ease infinite;
+    -moz-animation: titlebar-animation 10s ease infinite;
+    animation: titlebar-animation 10s ease infinite;
+}
+
+@-webkit-keyframes titlebar-animation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes titlebar-animation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes titlebar-animation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+@media only screen and (max-width: 600px) {
+    /* .appimg {
+        height: 48px !important;
+        width: 48px !important;
+    }
+    .appicon{
+        width:  64px;
+        height: 48px;
+        text-align: center;
+        margin-bottom: 2em;
+    } */
+    .title-bar {
+        font-size: 14px;
+    }
+
+    .show-window{
+        margin-left: auto;
+    }
 }
