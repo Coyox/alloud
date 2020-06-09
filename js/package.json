@@ -29,5 +29,9 @@
   "author": "George Mandis",
   "bugs": {
     "url": "https://github.com/snaptortoise/konami-js/issues"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "pixel-flow": "^2.0.0"
   }
 }

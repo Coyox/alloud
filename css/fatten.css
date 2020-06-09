@@ -1,0 +1,187 @@
+html{
+    height:100%;
+    width: 100%;
+}
+
+body{
+    background: url('../img/space.png') no-repeat center fixed;
+    background-size: cover;
+}
+
+a{
+    color: yellow;
+}
+
+fieldset{
+    margin: 1em;
+}
+
+.window-hide{
+    visibility: hidden;
+}
+
+.desktop-icons {
+    display: block;
+    width: 128px;
+    position: absolute;
+    left: 0;
+    margin-left: 8px;
+}
+
+.show-window {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 1024px;
+    margin-right: auto;
+    padding-left: 80px;
+}
+
+.window{
+    margin: auto;
+    display: block;
+    width: 90%;
+}
+
+.appicon{
+    width:  80px;
+    height: 80px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.appimg{
+    height: 64px;
+    width: 64px;
+}
+
+.fat-body{
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 48px;
+}
+
+.navbar{
+    width: 100%
+}
+
+.flex{
+    display: inline-flex;
+}
+
+.stats-box {
+    display: block;
+    min-width: 6em;
+    /* max-width: 300px;  */
+    /* margin: 1em; */
+}
+
+.image-box{
+    display: block;
+    /* margin: 1em; */
+}
+
+.fatass{
+    width: 100%;
+    height: 100%;
+    max-width: 512px;
+    max-height: 512px;
+}
+
+.weight-slider {
+    display: inline-block;
+    /* max-width: 300px;  */
+}
+
+.fatten-img{
+    text-align: center;
+}
+
+.start-button{
+    background-image: url(../img/start-button.png);
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 14px;
+}
+
+.start-button-padding{
+    float: left;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 2px 6px 3px;
+    background-color: silver;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    box-shadow: inset 1px 1px #dfdfdf,1px 0 #000,0 1px #000,1px 1px #000;
+    min-width: 59px;
+    margin-right: 6px;
+    color: #000;
+}
+
+.start-bar{
+    padding: 2px;
+    box-shadow: inset 1px 0 #fff;
+    display: block;
+    background-color: silver;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #f4f4f4;
+    border-bottom: 1px solid #4e4e4e;
+    position: fixed;
+    z-index: 10000;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.swatch-box{
+    display: inline-block;
+}
+
+.swatch{
+    height: 48px;
+    width: 48px;
+    color: #f3f3f3;
+    text-align: center;
+    margin: .5em;
+    display: inline-block;
+}
+
+.colour1{
+    background-color: #53514b;
+}
+.colour2{
+    background-color: #787878;
+}
+.colour3{
+    background-color: #413c38;
+}
+.colour4{
+    background-color: #dcdbd8;
+    color: #413c38;
+}
+.colour5{
+    background-color: #f3f3f3;
+    color: #413c38;
+}
+.colour6{
+    background-color: #efe119;
+    color: #413c38;
+}
+.colour7{
+    background-color: #3a3a3a;
+    color: #efe119;
+}

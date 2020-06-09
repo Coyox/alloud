@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>C:\WIN\FATCOYOTES.COM</title>
+    <!-- <link rel="stylesheet" href="windows-95-ui-kit/css/pixel.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/98.css">
+    <link rel="stylesheet" href="css/fatten.css">
+    
+</head>
+
+<body>
+    
+    <main>
+        <canvas id="starfield" style="position: absolute;"></canvas>
+        <div id="desktop">
+            <div id="desktop-icons" class="desktop-icons">
+                <a href="index.html" target="_blank">
+                    <div class="appicon">
+                        <img class="appimg" src="img/msie.png"><p>HOMEPAGE</p>
+                    </div>
+                </a>
+                <a href="#" id="fatten-exe">
+                    <div class="appicon">
+                        <img class="appimg" src="img/faticon.png"><p>FATTEN.EXE</p>
+                    </div>
+                </a>
+                <a href="#" id="coolstuff">
+                    <div class="appicon">
+                        <img class="appimg" src="img/folder.png"><p>COOL STUFF</p>
+                    </div>
+                </a>
+            </div>
+            <div id="fatten-window" class='show-window window-hide'>
+                <div class="window container">
+                    <div class="title-bar">
+                        <div class="title-bar-text">FATTEN.EXE</div>
+                        <div class="title-bar-controls">
+                            <button id="fatten-max" aria-label="Maximize"></button>
+                            <button id="fatten-close" aria-label="Close"></button>
+                        </div>
+                    </div>
+                    <div class="window-body">
+                        <div class="row">
+                            <div class="col flex">
+                                <fieldset class="stats-box">
+                                    <p>Name: Aru</p>
+                                    <p>Species: Coyote</p>
+                                    <p>Height: 5'10"</p>
+                                    <div>
+                                        <p style="display:inline;">Weight: </p>
+                                        <p style="display:inline;" id="curr-weight"></p>
+                                        <p style="display:inline;"> lbs</p>
+                                    </div> 
+                                </fieldset>
+                                <div>
+                                    <fieldset class="weight-slider">
+                                        <div class="field-row">
+                                            <label for="range21">Weight:</label>
+                                            <label for="range22">Low</label>
+                                            <input id="range22" type="range" min="0" max="4" value="0" />
+                                            <label for="range23">High</label>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="swatch-box">
+                                        <div class="swatch colour1">#53514b</div>
+                                        <div class="swatch colour2">#787878</div>
+                                        <div class="swatch colour3">#413c38</div>
+                                        <div class="swatch colour4">#dcdbd8</div>
+                                        <div class="swatch colour5">#f3f3f3</div>
+                                        <div class="swatch colour6">#efe119</div>
+                                        <div class="swatch colour7">#3a3a3a</div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <fieldset class="image-box">
+                                    <div class="fatten-img">
+                                        <img class="fatass" id="fatyote" draggable="false" src="img/fatten/a0.png">
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <div style="float: right;">
+                                        <p style="display: inline;">ART BY: </p>
+                                        <a style="display: inline;" href="https://twitter.com/vomitz">VOMITZ</a>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div id="homepagewindow" class="show-window">
+                <div class="window homepage">
+                    <div class="title-bar">
+                        <div class="title-bar-text">FATCOYOTES.COM</div>
+                        <div class="title-bar-controls">
+                            <button aria-label="Minimize"></button>
+                            <button aria-label="Maximize"></button>
+                            <button aria-label="Close"></button>
+                        </div>
+                    </div>
+                    <div class="window-body" style="height:720px;">
+                        <iframe style="width:100%;height:100%;" src="index.html" title="Homepage"></iframe>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div id="startmenu" class='start-bar'>
+            <a href="#" title="Start Menu" class="button start-button-padding">
+                <div class="start-button"></div>
+            </a>
+        </div>
+    </main>
+</body>
+
+
+
+<!-- <body class="fat-body bg-secondary">
+    <main id="container">
+        <section class="section section-lg">
+            <div class="container z-2">
+                <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                    <div class="card card-tertiary">
+                        <div class="card-header text-center">
+                            <span>FATCOYOTES.COM</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Hello World!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body> -->
+
+
+
+<script src='js/node_modules/jquery/dist/jquery.min.js'></script>
+<!-- <script src="js/bootstrap.min.js"></script> -->
+<!-- <script src="windows-95-ui-kit/js/pixel.js"></script> -->
+<script src="js/fatten.js"></script>
+</html>
