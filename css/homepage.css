@@ -537,7 +537,7 @@ a:hover, a:focus{
 }
 
 #switch:checked ~ .container > .screen {
-  animation: turn-on 2.5s linear;
+  animation: turn-on 1.0s linear;
   animation-fill-mode: forwards;
 }
 
