@@ -6,6 +6,13 @@ html{
 body{
     background: url('../img/space.png') no-repeat center fixed;
     background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
 }
 
 a{
@@ -14,6 +21,14 @@ a{
 
 fieldset {
     margin: 1em;
+}
+
+#fatten-window{
+    text-align: center;
+}
+
+.focus {
+    z-index: 10101;
 }
 
 .window-hide {
@@ -27,15 +42,11 @@ fieldset {
     margin-left: 8px;
 }
 
+
 .show-window {
     display: block;
-    position: relative;
-    margin-left: 80px;
-    margin-top: auto;
-    margin-bottom: auto;
-    max-width: 1024px;
-    margin-right: auto;
-    /* padding-left: 6em; */
+    position: absolute;
+    left: 80px;
 }
 
 .window {
@@ -44,6 +55,11 @@ fieldset {
     margin-left: 1em;
     display: block;
    
+}
+
+.title-bar-text {
+    width: 100%;
+    text-align: left;
 }
 
 .appicon {
@@ -123,6 +139,10 @@ fieldset {
     min-width: 59px;
     margin-right: 6px;
     color: #000;
+}
+
+.start-button-padding:hover, .start-button-padding:focus {
+    background:none;
 }
 
 .start-bar {
@@ -223,6 +243,7 @@ fieldset {
     }
 
     .show-window{
-        margin-left: auto;
+        /* margin-left: auto; */
+        padding-left: 0;
     }
 }
